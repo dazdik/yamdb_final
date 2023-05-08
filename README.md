@@ -72,25 +72,28 @@ scp default.conf <username>@<ip_сервера>:/home/<username>/nginx/
 ```
  6. Создать secrets в своем репозитории:
    - Перейдите в настройки репозитория **Settings**, выберите на панели слева **Secrets**, нажмите **New secret**
-   - Сохраните переменные из списка ниже(имя секрета=его значение) с необходимыми значениями: задайте имя секрета и его значение, затем нажмите **Add secret**:
+   - Сохраните переменные из таблицы ниже с необходимыми значениями: задайте имя секрета и его значение, затем нажмите **Add secret**:
 ![Alt-текст](https://docs.github.com/assets/cb-28266/mw-1440/images/help/repository/repo-actions-settings.webp)
 ![Alt-текст](https://docs.github.com/assets/cb-62141/mw-1440/images/help/repository/actions-secrets-tab.webp)
-```
-    DB_ENGINE=django.db.backends.postgresql # указать, что проект работает с postgresql
-    DB_NAME=postgres # имя базы данных
-    POSTGRES_USER=postgres # логин для подключения к базе данных
-    POSTGRES_PASSWORD=postgres # пароль для подключения к БД
-    DB_HOST=db # название сервиса БД (контейнера) 
-    DB_PORT=5432 # порт для подключения к БД
-    DOCKER_PASSWORD= # Пароль от аккаунта на DockerHub
-    DOCKER_USERNAME= # Username в аккаунте на DockerHub
-    HOST= # IP удалённого сервера
-    USER= # Логин на удалённом сервере
-    SSH_KEY= # SSH-key компьютера, с которого будет происходить подключение к удалённому серверу
-    PASSPHRASE= #Если для ssh используется фраза-пароль
-    TELEGRAM_TO= #ID пользователя в Telegram
-    TELEGRAM_TOKEN= #ID бота в Telegram
-```
+
+
+| Имя секрета| Значение |
+| ------------- | ------------- |
+| DB_ENGINE  |django.db.backends.postgresql  |
+| DB_NAME  | DB_NAME  |
+| POSTGRES_USER  | postgres  |
+| POSTGRES_PASSWORD  | postgres  |
+| DB_HOST  | db  |
+| DB_PORT  | 5432 |
+|  DOCKER_PASSWORD  | Пароль от аккаунта на DockerHub |  
+|  DOCKER_USERNAME  | Username в аккаунте на DockerHub |  
+|  HOST  | IP удалённого сервера |      
+|    USER | Логин на удалённом сервере |
+|    SSH_KEY | SSH-key компьютера, с которого будет происходить подключение к удалённому серверу|
+|    PASSPHRASE| *Если для ssh используется фраза-пароль* |
+|    TELEGRAM_TO| ID пользователя в Telegram |
+|    TELEGRAM_TOKEN | ID бота в Telegram |
+____
 
 7. Выполнить команды:
 ```
@@ -105,4 +108,5 @@ git push
  - сборка и доставка докер-образа для контейнера web на Docker Hub
  - автоматический деплой проекта на боевой сервер
  отправка уведомления в Telegram о том, что процесс деплоя успешно завершился
+
 
