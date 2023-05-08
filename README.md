@@ -32,7 +32,7 @@ ____
 ___
 ## Запуск проекта 🚀
 
-1. Клонировать репозиторий:
+1. Клонировать репозиторий и сделать его ***fork***:
 
 ```
 https://github.com/dazdik/yamdb_final
@@ -66,7 +66,7 @@ chmod +x /usr/local/bin/docker-compose
 scp docker-compose.yaml <username>@<ip_сервера>:/home/<username>/
 ```
 ```
-scp default.conf <username>@<ip_сервера>:/home/<username>/nginx/+
+scp default.conf <username>@<ip_сервера>:/home/<username>/nginx/
 ```
  6. Создать secrets в своем репозитории:
    - Перейдите в настройки репозитория **Settings**, выберите на панели слева **Secrets**, нажмите **New secret**
