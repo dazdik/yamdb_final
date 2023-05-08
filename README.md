@@ -38,6 +38,8 @@ ___
 https://github.com/dazdik/yamdb_final
 ```
 
+![Alt-текст](https://arduinoplus.ru/wp-content/uploads/2020/10/git-fork-1.jpg)
+
 2. Перейти в директорию  ```cd infra``` и создать файл .env, заполнить его по следующему примеру:
 
 ```
@@ -71,6 +73,8 @@ scp default.conf <username>@<ip_сервера>:/home/<username>/nginx/
  6. Создать secrets в своем репозитории:
    - Перейдите в настройки репозитория **Settings**, выберите на панели слева **Secrets**, нажмите **New secret**
    - Сохраните переменные из списка ниже(имя секрета=его значение) с необходимыми значениями: задайте имя секрета и его значение, затем нажмите **Add secret**:
+![Alt-текст](https://docs.github.com/assets/cb-28266/mw-1440/images/help/repository/repo-actions-settings.webp)
+![Alt-текст](https://docs.github.com/assets/cb-62141/mw-1440/images/help/repository/actions-secrets-tab.webp)
 ```
     DB_ENGINE=django.db.backends.postgresql # указать, что проект работает с postgresql
     DB_NAME=postgres # имя базы данных
