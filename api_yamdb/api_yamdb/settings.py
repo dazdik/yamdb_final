@@ -12,9 +12,9 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     '51.250.75.35',
-    'localhost',
     '127.0.0.1',
     'dazdik.sytes.net',
+    'localhost',
 ]
 
 # Application definition
