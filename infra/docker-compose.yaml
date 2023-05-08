@@ -8,7 +8,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: dazdik/infra:v1
+    image: nbaishev/api_yamdb:latest
     restart: always
     depends_on:
       - db
