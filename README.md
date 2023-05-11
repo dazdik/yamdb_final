@@ -1,6 +1,8 @@
 # yamdb_final
 [![Django-app workflow](https://github.com/dazdik/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/dazdik/yamdb_final/actions/workflows/yamdb_workflow.yml)
 
+Сайт доступен по ссылке [http://51.250.75.35/api/v1/](http://51.250.75.35/api/v1/)
+
 ## Автор:
 
 💻 [dazdik](https://github.com/dazdik)
