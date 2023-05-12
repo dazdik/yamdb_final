@@ -10,7 +10,9 @@ services:
   web:
     image: dazdik/infra:latest
     restart: always
-    
+    volumes:
+      - static_value:/app/static/
+      - media_value:/app/media/
     depends_on:
       - db
     env_file:
@@ -18,7 +20,7 @@ services:
 
   nginx:
     image: nginx:1.21.3-alpine
-    restart: alway
+    restart: always
 
     ports:
       - "80:80"
